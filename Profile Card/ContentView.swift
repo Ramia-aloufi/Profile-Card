@@ -10,7 +10,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack{
+            Image(systemName: "person")
+                .resizable()
+                .cornerRadius(10)
+                .padding()
+                .frame(width: 150.0, height: 150.0)
+            Text("Ramia Aloufi")
+                .font(Font.custom("SignPainter", size: 40))
+            HStack{
+                Image(systemName: "envelope")
+                    .padding()
+                    .frame(width: 32.0, height: 32.0)
+                Text("ramia.aloufi@gmail.com")
+            }
+            
+            
+        }
     }
 }
 
